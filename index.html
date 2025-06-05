@@ -8,25 +8,23 @@
     <link rel="stylesheet" href="/css/geral.css" />
     <link rel="stylesheet" href="/css/inicial.css" />
     <link rel="stylesheet" href="/css/projetos.css" />
-
-
   </head>
   <body>
     <!-- Seção da header => botões de navegação e menu hamburguer -->
 
     <header>
       <nav>
-          <ul class="botoes-navegacao web header">
-            <li class="web header">
-              <a href="#projetos" id="botao-projetos">Projetos</a>
-            </li>
-            <li class="web header">
-              <a href="#sobre-mim" id="botao-sobre-mim">Sobre</a>
-            </li>
-            <li class="web header">
-              <a href="#contato" id="botao-contato">Dizer Oi!</a>
-            </li>
-          </ul>
+        <ul class="botoes-navegacao web header">
+          <li class="web header">
+            <a href="#projetos" id="botao-projetos">Projetos</a>
+          </li>
+          <li class="web header">
+            <a href="#sobre-mim" id="botao-sobre-mim">Sobre</a>
+          </li>
+          <li class="web header">
+            <a href="#contato" id="botao-contato">Dizer Oi!</a>
+          </li>
+        </ul>
         <img
           src="/assets/icone-menu.svg"
           class="mobile header"
@@ -54,6 +52,59 @@
             id="icone-marlon"
           />
         </div>
+      </section>
+
+      <!-- Tela de projetos -->
+
+      <section id="projetos">
+        <h2 id="titulo-secao-projetos-mobile" class="mobile-only projetos">
+          Meu último projeto
+        </h2>
+        <h2 id="titulo-secao-projetos-web" class="web-only projetos">
+          Meus últimos projetos
+        </h2>
+
+        <div id="cards-de-projetos">
+          <div class="projeto-esquerda web-only projetos">
+            <div
+              class="circulo-roxo web-only projetos"
+              id="circulo-roxo-projeto-esquerda"
+            ></div>
+            <img
+              src=""
+              id="projeto-esquerda-conteudo"
+              class="web-only projetos"
+            />
+          </div>
+
+          <div class="ultimo-projeto">
+            <div
+              class="circulo-roxo web-e-mobile projetos"
+              id="circulo-roxo-ultimo-projeto"
+            ></div>
+            <img
+              src=""
+              id="ultimo-projeto-conteudo"
+              class="web-e-mobile projetos"
+            />
+          </div>
+
+          <div class="projeto-direita web-only projetos">
+            <div
+              class="circulo-roxo web-only projetos"
+              id="circulo-roxo-projeto-direita"
+            ></div>
+            <img
+              src=""
+              id="projeto-direita-conteudo"
+              class="web-only projetos"
+            />
+          </div>
+        </div>
+
+        <a href="https://github.com/marlonseben1" target="_blank">
+          <button id="botao-github">Ver mais</button>
+        </a>
       </section>
     </main>
   </body>
