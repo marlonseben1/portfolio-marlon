@@ -10,14 +10,14 @@
       index++;
       setTimeout(digitar, 100);
     } else {
-      // Aparece a foto primeiro
+      // Foto vai antes
       foto.classList.add("aparecer");
 
-      // Depois aparece os fatos em sequência
+      // Fatos vão depois
       fatos.forEach((fato, i) => {
         setTimeout(() => {
           fato.classList.add("aparecer");
-        }, (i + 1) * 400); // foto aparece no 0ms, fatos com delay começando depois
+        }, (i + 1) * 400); 
       });
     }
   }
