@@ -6,31 +6,42 @@
     <title>Marlon Seben</title>
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/geral.css" />
-    <link rel="stylesheet" href="/css/inicial.css" />
     <link rel="stylesheet" href="/css/projetos.css" />
     <link rel="stylesheet" href="/css/sobre.css" />
     <link rel="stylesheet" href="/css/contato.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+
   </head>
   <body>
 
-    
+
     <!-- Tela inicial de apresentação -->
 
-    <main>
-      <section id="tela-inicial">
-        <div id="titulo-e-subtitulo">
-          <h1 id="titulo-tela-inicial">Designer &amp; Desenvolvedor</h1>
+      <section id="sobre-mim">
+        <div id="console">
+          <div class="botoes-do-mac">
+            <div class="vermelho"></div>
+            <div class="amarelo"></div>
+            <div class="verde"></div>
+          </div>
+          <h2 id="titulo-sobre-mim" class="digitando"><span id="texto-digitando"></span></h2>
 
-          <h2 id="subtitulo-tela-inicial">Vamos dar vida às suas ideias?</h2>
-        </div>
-
-        <div id="container-icone-circulo-tela-inicial">
-          <div class="circulo-roxo" id="circulo-roxo-tela-inicial"></div>
-          <img
-            src="assets/marlon.svg"
-            alt="ícone do Marlon"
-            id="icone-marlon"
-          />
+          <div id="conteudo-do-console">
+            <img
+              id="foto-marlon"
+              src="/assets/marlon-foto.jpeg"
+              alt="Foto do Marlon"
+            />
+            <p id="primeiro-fato-sobre-mim" class="fatos">
+              Sou apaixonado por UX Design - Total foco no usuario
+            </p>
+            <p class="fatos">
+              Gosto de construir aplicações simples e diretas ao ponto
+            </p>
+            <p class="fatos">
+              Estou estudando Analise e Desenvolvimento de Sistemas
+            </p>
+          </div>
         </div>
       </section>
 
@@ -87,34 +98,14 @@
         </a>
       </section>
 
-      <!-- Tela sobre mim -->
+      <!-- Div separação -->
 
-      <section id="sobre-mim">
-        <div id="console">
-          <div class="botoes-do-mac">
-            <div class="vermelho"></div>
-            <div class="amarelo"></div>
-            <div class="verde"></div>
-          </div>
-          <h2 id="titulo-sobre-mim">Opa, tudo bem? Sou o Marlon!</h2>
-          <div id="conteudo-do-console">
-            <img
-              id="foto-marlon"
-              src="/assets/marlon-foto.jpeg"
-              alt="Foto do Marlon"
-            />
-            <p id="primeiro-fato-sobre-mim" class="fatos">
-              Sou apaixonado por UX Design - Total foco no usuario
-            </p>
-            <p class="fatos">
-              Gosto de construir aplicações simples e diretas ao ponto
-            </p>
-            <p class="fatos">
-              Estou estudando Analise e Desenvolvimento de Sistemas
-            </p>
-          </div>
-        </div>
-      </section>
+<div class="div-separacao">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0 C300,100 900,0 1200,100 L1200,120 L0,120 Z" fill="#4339de"></path>
+  </svg>
+</div>
+
 
       <!-- Tela de contato -->
 
@@ -182,5 +173,35 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p id="footer-nome-sobrenome">Marlon Seben</p>
+      <a href="https://www.linkedin.com/in/marlon-seben-356bb7309/" target="_blank">
+        <img
+          src="/assets/icone-linkedin.svg"
+          id="icone-linkedin"
+          alt="LinkedIn"
+        />
+      </a>
+
+      <a href="https://github.com/marlonseben1" target="_blank">
+        <img
+          src="/assets/icone-github.svg"
+          id="icone-github"
+          alt="GitHub"
+        />
+      </a>
+
+      <a href="https://www.instagram.com/seben_marlon/" target="_blank">
+        <img
+          src="/assets/icone-instagram.svg"
+          id="icone-instagram"
+          alt="Instagram"
+        />
+      </a>
+    </footer>
   </body>
+  <script src="/scripts.js"></script>
 </html>

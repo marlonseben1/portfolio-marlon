@@ -33,3 +33,18 @@ body {
   background-color: var(--cor-primaria);
   border-radius: 50%;
 }
+
+.div-separacao {
+  width: 100%;
+  height: 3rem;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.div-separacao svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
