@@ -1,0 +1,169 @@
+/* Cores */
+:root {
+  --cor-primaria: #4339de;
+  --cor-primaria-variacao: #493cf8;
+  --cor-primaria-variacao2: #442cca;
+  --cor-secundaria: #767676;
+}
+
+/* ---------------------- */
+/* Contato - MOBILE */
+/* ---------------------- */
+
+#contato-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+#titulo-contato {
+  width: 15rem;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: black;
+  margin-bottom: 0;
+  justify-self: center;
+  text-align: center;
+}
+
+#texto-roxo-contato {
+  color: var(--cor-primaria-variacao);
+}
+
+#email-div-mobile,
+#whats-div-mobile {
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+#email-div-mobile {
+  margin-top: 5rem;
+  width: 70%;
+}
+
+#whats-div-mobile {
+  margin-top: 2rem;
+  width: 50%;
+}
+
+#p-email,
+#p-whats {
+  font-weight: bold;
+  color: var(--cor-primaria);
+  margin-left: 0.5rem;
+}
+
+#homem-programando-contato {
+  margin-top: 3rem;
+  width: 100%;
+}
+
+/* ---------------------- */
+/* Contato - WEB (Desktop) */
+/* ---------------------- */
+
+#contato-web {
+  display: none; /* só será visível em telas maiores */
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.titulo-contato-web {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.texto-roxo-web {
+  color: var(--cor-primaria-variacao);
+}
+
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-group div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: none;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.imagem-programador {
+  top: 5rem;
+  width: 30rem;
+  justify-self: end;
+  align-self: flex-end;
+}
+
+#asterisco {
+  color: red;
+  font-size: 1.5rem;
+}
+
+/* ---------------------- */
+/* Media Query (Responsividade) */
+/* ---------------------- */
+
+@media screen and (min-width: 768px) {
+  #contato-mobile {
+    display: none;
+  }
+
+  #contato-web {
+    display: flex;
+  }
+}
+

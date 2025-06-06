@@ -9,32 +9,11 @@
     <link rel="stylesheet" href="/css/inicial.css" />
     <link rel="stylesheet" href="/css/projetos.css" />
     <link rel="stylesheet" href="/css/sobre.css" />
+    <link rel="stylesheet" href="/css/contato.css" />
   </head>
   <body>
-    <!-- Seção da header => botões de navegação e menu hamburguer -->
 
-    <header>
-      <nav>
-        <ul class="botoes-navegacao web header">
-          <li class="web header">
-            <a href="#projetos" id="botao-projetos">Projetos</a>
-          </li>
-          <li class="web header">
-            <a href="#sobre-mim" id="botao-sobre-mim">Sobre</a>
-          </li>
-          <li class="web header">
-            <a href="#contato" id="botao-contato">Dizer Oi!</a>
-          </li>
-        </ul>
-        <img
-          src="/assets/icone-menu.svg"
-          class="mobile header"
-          id="icone-hamburguer"
-          alt="Icone de menu hamburguer"
-        />
-      </nav>
-    </header>
-
+    
     <!-- Tela inicial de apresentação -->
 
     <main>
@@ -110,23 +89,98 @@
 
       <!-- Tela sobre mim -->
 
-<section id="sobre-mim">
-<div id="console">
-  <div class="botoes-do-mac">
-    <div class="vermelho"></div>
-    <div class="amarelo"></div>
-    <div class="verde"></div>
-  </div>
-  <h2 id="titulo-sobre-mim">Opa, tudo bem? Sou o Marlon!</h2>
-  <div id="conteudo-do-console">
-    <img id="foto-marlon" src="/assets/marlon-foto.jpeg" alt="Foto do Marlon" />
-    <p id="primeiro-fato-sobre-mim" class="fatos">Sou apaixonado por UX Design - Total foco no usuario</p>
-    <p class="fatos">Gosto de construir aplicações simples e diretas ao ponto</p>
-    <p class="fatos">Estou estudando Analise e Desenvolvimento de Sistemas</p>
-  </div>
-</div>
-</section>
+      <section id="sobre-mim">
+        <div id="console">
+          <div class="botoes-do-mac">
+            <div class="vermelho"></div>
+            <div class="amarelo"></div>
+            <div class="verde"></div>
+          </div>
+          <h2 id="titulo-sobre-mim">Opa, tudo bem? Sou o Marlon!</h2>
+          <div id="conteudo-do-console">
+            <img
+              id="foto-marlon"
+              src="/assets/marlon-foto.jpeg"
+              alt="Foto do Marlon"
+            />
+            <p id="primeiro-fato-sobre-mim" class="fatos">
+              Sou apaixonado por UX Design - Total foco no usuario
+            </p>
+            <p class="fatos">
+              Gosto de construir aplicações simples e diretas ao ponto
+            </p>
+            <p class="fatos">
+              Estou estudando Analise e Desenvolvimento de Sistemas
+            </p>
+          </div>
+        </div>
+      </section>
 
+      <!-- Tela de contato -->
+
+      <section id="contato-mobile" class="mobile-only contato">
+        <h2 id="titulo-contato">
+          Sua <span id="texto-roxo-contato">ideia de sucesso</span> começa com
+          um "Olá"
+        </h2>
+        <div id="secao-contato-mobile">
+          <div id="email-div-mobile">
+            <img src="/assets/icone-carta.svg" alt="Ícone de carta" />
+            <p id="p-email">marlonseben1@gmail.com</p>
+          </div>
+          <div id="whats-div-mobile">
+            <img src="/assets/icone-whats.svg" alt="Ícone do Whatsapp" />
+            <p id="p-whats">(54) 9 92029747</p>
+          </div>
+          <img
+            id="homem-programando-contato"
+            alt="Homem programando site"
+            src="/assets/icone-programando.svg"
+          />
+        </div>
+      </section>
+
+      <section id="contato-web" class="web-only contato">
+        <div class="contato-container">
+          <div class="form-section">
+            <h2 class="titulo-contato-web">
+              Sua <span class="texto-roxo-web">ideia de sucesso</span> começa com
+              um “Olá”
+            </h2>
+            <form class="formulario-contato">
+              <div class="input-group">
+                <div>
+                  <label for="nome"
+                    >Seu nome <span id="asterisco">*</span></label
+                  >
+                  <input type="text" id="nome" placeholder="Nome" required />
+                </div>
+                <div>
+                  <label for="email"
+                    >Seu email<span id="asterisco">*</span></label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="exemplo@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <label for="mensagem"
+                >Sua mensagem <span id="asterisco">*</span></label
+              >
+              <textarea id="mensagem" required></textarea>
+              <button type="submit">Enviar mensagem</button>
+            </form>
+          </div>
+          <img
+            src="/assets/icone-programando.svg"
+            alt="Homem programando"
+            class="imagem-programador"
+          />
+        </div>
+      </section>
     </main>
   </body>
 </html>
